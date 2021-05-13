@@ -1,2 +1,2 @@
 # Pixa-Api
-Searching pictures by using api
+Searching pictures by using Angular and Api
