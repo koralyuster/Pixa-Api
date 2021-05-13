@@ -1,0 +1,15 @@
+.strip {
+    min-height: 450px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    background-image: url(/assets/pics/camera.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.strip h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5),
+        0 0 10px rgba(255, 255, 255, .5);
+}

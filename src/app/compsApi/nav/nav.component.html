@@ -1,0 +1,10 @@
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="row my-2">
+            <div class="col-lg-6 d-flex mx-auto py-4">
+                <input [(ngModel)]="searchInput" type="search" placeholder="Search free high-resolution photos"
+                    class="form-control">
+                <button (click)="searchApi()" class="btn btn-light ms-2"><i class="fas fa-search search"></i></button>
+            </div>
+        </div>
+    </div>

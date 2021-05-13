@@ -1,0 +1,27 @@
+<div class="container-fluid py-1 sort">
+    <div class="row my-2">
+        <div class="col-lg-11">
+            <div class="float-end d-flex flex-row ms-4">
+                <label class="px-3">Sort</label>
+                <select (change)="sortChange()" [(ngModel)]="sortSelect" class="form-select">
+                    <option value="tags">Name</option>
+                    <option value="likes">Likes</option>
+                    <option value="favorites">Favorites</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 p-3" *ngFor="let item of imgAr">
+            <div class="shadow p-2 overflow-hidden" [style]="{height:'100%'}">
+                <img src="{{item.largeImageURL}}" class="float-end ms-2 w-50">
+                <h4>{{item.tags}}</h4>
+                <div>Likes: {{item.likes}}</div>
+                <a href="{{item.pageURL}}" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>
